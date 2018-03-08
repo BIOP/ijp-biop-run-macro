@@ -5,21 +5,19 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>16.1.0</version>
+		<version>19.2.0</version>
 		<relativePath />
 	</parent>
 
-	<groupId>sc.fiji</groupId>
-	<artifactId>Colocalisation_Analysis</artifactId>
-	<version>3.0.1-SNAPSHOT</version>
+	<groupId>ch.epfl.biop</groupId>
+	<version>1.0.0</version>
 
-	<name>Coloc 2</name>
-	<description>Fiji's plugin for colocalization analysis.</description>
-	<url>https://imagej.net/Coloc_2</url>
-	<inceptionYear>2009</inceptionYear>
+	<name>B_Run_Macro</name>
+	<url>https://biop.epfl.ch/</url>
+	<inceptionYear>2017</inceptionYear>
 	<organization>
-		<name>Fiji</name>
-		<url>http://fiji.sc/</url>
+		<name>BIOP</name>
+		<url>https://biop.epfl.ch</url>
 	</organization>
 	<licenses>
 		<license>
@@ -107,23 +105,22 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/fiji/Colocalisation_Analysis</connection>
-		<developerConnection>scm:git:git@github.com:fiji/Colocalisation_Analysis</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/fiji/Colocalisation_Analysis</url>
+		<url>https://c4science.ch/source/ijp-biop-run-macro.git</url>
 	</scm>
 	<issueManagement>
-		<system>github.com</system>
-		<url>https://github.com/fiji/Colocalisation_Analysis</url>
+		<system>c4science</system>
+		<url>https://c4science.ch/source/ijp-biop-run-macro.git</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Travis CI</system>
-		<url>https://travis-ci.org/fiji/Colocalisation_Analysis</url>
+		<system>None</system>
+		<url>NONE</url>
 	</ciManagement>
 
 	<properties>
 		<license.licenseName>gpl_v3</license.licenseName>
-		<license.copyrightOwners>Fiji developers.</license.copyrightOwners>
+		<license.copyrightOwners>BIOP</license.copyrightOwners>
+		<imagej.app.directory>C:/Fiji/</imagej.app.directory>
 	</properties>
 
 	<repositories>
@@ -135,41 +132,18 @@
 
 	<dependencies>
 		<!-- Fiji dependencies -->
-		<dependency>
-			<groupId>sc.fiji</groupId>
-			<artifactId>fiji-lib</artifactId>
-		</dependency>
 
 		<!-- ImageJ dependencies -->
-		<dependency>
-			<groupId>net.imagej</groupId>
-			<artifactId>ij</artifactId>
-		</dependency>
 
 		<!-- ImgLib2 dependencies -->
-		<dependency>
-			<groupId>net.imglib2</groupId>
-			<artifactId>imglib2</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>net.imglib2</groupId>
-			<artifactId>imglib2-algorithm</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>net.imglib2</groupId>
 			<artifactId>imglib2-ij</artifactId>
 		</dependency>
 
 		<!-- Third party dependencies -->
-		<dependency>
-			<groupId>com.itextpdf</groupId>
-			<artifactId>itextpdf</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
+	<artifactId>B_Run_Macro</artifactId>
+	<description>Macro Runner command to work with SciJava Parameters</description>
 </project>
